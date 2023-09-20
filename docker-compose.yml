@@ -1,0 +1,10 @@
+version: '3'
+services:
+  open-interpreter-gui:
+    build:
+      context: ./container-gui
+    image: open-interpreter-gui:latest
+    ports:
+      - "6080:80"
+    volumes:
+      - .:/root
